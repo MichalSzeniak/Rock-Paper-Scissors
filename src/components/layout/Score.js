@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/Score.scss';
 
-const Score = () => {
+const Score = ({score}) => {
   return (
     <>
       <section className="score-section">
@@ -13,7 +13,7 @@ const Score = () => {
           </ul>
           <div className="score">
             <p className="score__header">SCORE</p>
-            <span className="score__counter">15</span>
+            <span className="score__counter">{score}</span>
           </div>
         </div>
       </section>

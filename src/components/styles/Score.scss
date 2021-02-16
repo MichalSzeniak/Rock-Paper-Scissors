@@ -1,5 +1,5 @@
 .score-section {
-    padding-top: 100px;
+    padding-top: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,22 +12,27 @@
     align-items: center;
     border: 5px solid #434C6B;
     border-radius: 10px;
-    width: 800px;
+    width: 100%;
+    max-width: 700px;
 }
 
 .gameName {
-    font-size: 18px;
+    font-size: 24px;
     font-weight: bold;
     list-style: none;
     padding: 0;
     margin: 0;
+    background: linear-gradient(124.08deg, #1B60C7 0%, #0066FF 0.01%, rgba(131, 0, 47, 0.89) 100%);
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #fff;
+    text-shadow: 0px 1px 11px rgba(2, 255, 23, 0.1);
 }
 
 .score {
     background-color: #fff;
-    font-size: 14px;
     color: rgb(29, 29, 29);
-    padding: 0 16px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -36,11 +41,19 @@
 
     &__header {
         margin: 0;
+        font-size: 18px;
         font-weight: 600;
+        padding: 0 12px;
+
+        @media (max-width: 550px) {
+            font-size: 12px;
+        }
     }
 
     &__counter {
-        font-size: 24px;
+        font-size: 32px;
         font-weight: bold;
     }
+
+
 }

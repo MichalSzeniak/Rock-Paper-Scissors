@@ -1,0 +1,46 @@
+.score-section {
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.score__container{
+    padding: 8px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 5px solid #434C6B;
+    border-radius: 10px;
+    width: 800px;
+}
+
+.gameName {
+    font-size: 18px;
+    font-weight: bold;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.score {
+    background-color: #fff;
+    font-size: 14px;
+    color: rgb(29, 29, 29);
+    padding: 0 16px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__header {
+        margin: 0;
+        font-weight: 600;
+    }
+
+    &__counter {
+        font-size: 24px;
+        font-weight: bold;
+    }
+}
